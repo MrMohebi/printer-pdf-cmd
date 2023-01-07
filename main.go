@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+
 	"github.com/jadefox10200/goprint"
 )
 
@@ -21,8 +22,6 @@ func main() {
 		flag.Usage()
 		os.Exit(1)
 	}
-
-	fmt.Println(*printerName)
 
 	//open the printer
 	printerHandle, err := goprint.GoOpenPrinter(*printerName)
